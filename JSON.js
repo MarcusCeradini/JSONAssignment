@@ -6,9 +6,11 @@ const person =
     "section": "2816",
     "role": "student"
 }`
-console.log("JSON format:")
-console.log(person)
 
 const parseperson = JSON.parse(person)
 console.log("Person object:")
 console.log(parseperson)
+
+console.log("JSON format:")
+console.log(person)
+
