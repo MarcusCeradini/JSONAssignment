@@ -13,8 +13,6 @@ document.getElementById('button').addEventListener("click", () => {
     const personParse = JSON.parse(person)
     console.log(personParse)
 
-    console.log(" ")
-
     console.log("JSON Format:")
     console.log(person)
 })
