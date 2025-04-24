@@ -1,25 +1,20 @@
+document.getElementById('button').addEventListener("click", () => {
 
-document.getElementById("button").addEventListener("click", () => {
-    let firstname = document.getElementById("firstname")
-    console.log(firstname)
-    let lastname = document.getElementById("lastname")
-    let course = document.getElementById("course")
-    let section = document.getElementById("sectionnumber")
+    const person = 
+    `{
+        "firstName": "${document.getElementById('firstName').value}",
+        "lastName": "${document.getElementById('lastName').value}",
+        "course": "${document.getElementById('course').value}",
+        "section": "${document.getElementById('section').value}",
+        "role": "${document.getElementById('role').value}"
+    }`
+
+    console.log("Person object:")
+    const personParse = JSON.parse(person)
+    console.log(personParse)
+
+    console.log(" ")
+
+    console.log("JSON Format:")
+    console.log(person)
 })
-
-const person = 
-`{
-    "firstname": "",
-    "lastname": "Ceradini",
-    "course": "Web-115",
-    "section": "2816",
-    "role": "student"
-}`
-
-const parseperson = JSON.parse(person)
-console.log("Person object:")
-console.log(parseperson)
-
-console.log("JSON format:")
-console.log(person)
-
