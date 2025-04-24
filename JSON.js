@@ -1,6 +1,15 @@
+
+document.getElementById("button").addEventListener("click", () => {
+    let firstname = document.getElementById("firstname")
+    console.log(firstname)
+    let lastname = document.getElementById("lastname")
+    let course = document.getElementById("course")
+    let section = document.getElementById("sectionnumber")
+})
+
 const person = 
 `{
-    "firstname": "Marcus",
+    "firstname": "",
     "lastname": "Ceradini",
     "course": "Web-115",
     "section": "2816",
